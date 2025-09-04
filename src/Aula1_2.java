@@ -1,8 +1,15 @@
+import javax.swing.JOptionPane;
+
 public class Aula1_2 {
+    public static void main(String[] args) {
 
-public static void main(String []args){
+        String num;
+        int arm;
+        num = JOptionPane.showInputDialog(
+                "Digite um número:");
+        arm = Integer.parseInt(num);
 
-System.out.println("Olá, mundo!");
+        JOptionPane.showMessageDialog(null, "O valor do número digitado é: " + arm);
+
     }
 }
-
