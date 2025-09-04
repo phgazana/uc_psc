@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Aula1_6 {
+public class Pratica01_6 {
     public static void main(String[] args) {
 
         char milhar, centena, dezena, unidade;

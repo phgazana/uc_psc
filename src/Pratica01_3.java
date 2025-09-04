@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Aula1_3 {
+public class Pratica01_3 {
     public static void main(String[] args) {
 
         String dia, mes, ano;
