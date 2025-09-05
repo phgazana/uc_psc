@@ -18,5 +18,6 @@ public class Programa {
             JOptionPane.showMessageDialog(null, "Ótimo");
         } else {
             JOptionPane.showMessageDialog(null, "Péssimo");
+        }
     }
 }
