@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Pratica01_10 {
+public class Pratica01_16 {
 
     public static void main(String[] args) {
 
