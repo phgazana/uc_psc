@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Programa02 {
+public class IfMeses {
     public static void main(String[] args) {
 
         int mes;

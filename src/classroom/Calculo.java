@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Programa01 {
+public class Calculo {
     public static void main(String[] args) {
         //Declaração de váriaveis
 
