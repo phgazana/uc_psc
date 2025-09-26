@@ -4,16 +4,23 @@ public class Pratica03_10 {
     public static void main(String[] args) {
 
         int num;
+        int i;
 
-        do {
-            num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número:"));
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número:"));
 
-            if (num != -999) {
-                JOptionPane.showMessageDialog(null, "Número: " + num + "\nDivisor: ");
+        while (num != -999) {
+            JOptionPane.showMessageDialog(null, "Divisores de " + num + ":");
+            i = 1;
+
+            while (i <= num) {
+
+                if (num % i == 0) {
+
+                    JOptionPane.showMessageDialog(null, i);
+                }
+            i++;
             }
-
-        } while (num != -999);
-
-
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número:"));
+        }
     }
 }
