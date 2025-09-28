@@ -3,26 +3,18 @@ import javax.swing.JOptionPane;
 public class Pratica01_13 {
     public static void main(String[] args) {
 
-        double angulo, radiano;
         double seno, cosseno, tangente, secante, cossecante, cotangente;
 
-        angulo = Double.parseDouble(JOptionPane.showInputDialog("Digite o ângulo em graus:"));
+        double angulo = Double.parseDouble(JOptionPane.showInputDialog("Digite o angulo em graus:"));
+        double rad = Math.toRadians(angulo);
 
-        radiano = Math.toRadians(angulo);
-
-        seno = Math.sin(radiano);
-        cosseno = Math.cos(radiano);
-        tangente = Math.tan(radiano);
+        seno = Math.sin(rad);
+        cosseno = Math.cos(rad);
+        tangente = Math.tan(rad);
         secante = 1 / cosseno;
         cossecante = 1 / seno;
         cotangente = 1 / tangente;
 
-        JOptionPane.showMessageDialog(null, "Seno: " + seno + "\n" +
-                "Cosseno: " + cosseno + "\n" +
-                "Tangente: " + tangente + "\n" +
-                "Secante: " + secante + "\n" +
-                "Cossecante: " + cossecante + "\n" +
-                "Cotangente: " + cotangente + "\n");
-
+        JOptionPane.showMessageDialog(null, "Seno: " + String.format("%.4f", seno) + "\nCosseno: " + String.format("%.4f", cosseno) + "\nTangente: " + String.format("%.4f", tangente) + "\nSecante: " + String.format("%.4f", secante) + "\nCossecante: " + String.format("%.4f", cossecante) + "\nCotangente: " + String.format("%.4f", cotangente));
     }
 }
