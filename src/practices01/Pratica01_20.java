@@ -5,12 +5,9 @@ public class Pratica01_20 {
 
     public static void main(String[] args) {
 
-        double area, raio;
+        double raio = Double.parseDouble(JOptionPane.showInputDialog("Digite o raio:"));
 
-        raio = Double.parseDouble(JOptionPane.showInputDialog("Digite o raio:"));
-
-
-        area = PI * Math.pow(raio, 2);
+        double area = PI * Math.pow(raio, 2);
 
         JOptionPane.showMessageDialog(null, "Área do circulo: " + area);
     }

@@ -1,29 +1,17 @@
-
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Pratica01_19 {
 
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        double a, b, c;
 
-        double resultado, x, a, b, c;
+        a = Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro numero:"));
+        b = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo numero:"));
+        c = Double.parseDouble(JOptionPane.showInputDialog("Digite o terceiro numero:"));
 
-        System.out.print("Entre com o numero x:");
-        x = entrada.nextDouble();
+        double x = 2 * ((a - c) / 8) - b * 5;
 
-        System.out.print("Entre com o numero a:");
-        a = entrada.nextDouble();
-
-        System.out.print("Entre com o numero b:");
-        b = entrada.nextDouble();
-
-        System.out.print("Entre com o numero c:");
-        c = entrada.nextDouble();
-
-        resultado = x = 2 * ((a - c) / 8) - b * 5;
-
-        System.out.println("O resultado do calculo: " + resultado);
-
+        JOptionPane.showMessageDialog(null, "Resultado da expressao: " + x);
     }
 }
