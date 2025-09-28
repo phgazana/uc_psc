@@ -1,14 +1,13 @@
 import javax.swing.JOptionPane;
 
-public class Pratica01_8 {
+public class    Pratica01_8 {
     public static void main(String[] args) {
 
-        double base, altura, area;
+        int base = Integer.parseInt(JOptionPane.showInputDialog("Digite a base do retangulo:"));
+        int altura = Integer.parseInt(JOptionPane.showInputDialog("Digite a altura do triangulo:"));
 
-        base = Double.parseDouble(JOptionPane.showInputDialog("Digite a base do retângulo:"));
-        altura = Double.parseDouble(JOptionPane.showInputDialog("Digite a altura do retângulo:"));
-        area = base * altura;
+        int area = base * altura;
 
-        JOptionPane.showMessageDialog(null, "A área do retângulo é: " + area);
+        JOptionPane.showMessageDialog(null, "A area do retangulo com base nas medidas: " + area);
     }
 }

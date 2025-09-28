@@ -1,24 +1,17 @@
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Pratica01_17 {
-
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        int data = Integer.parseInt(JOptionPane.showInputDialog("Digite uma data (ddmmaa):"));
+        int dia = data % 100;
+        int mes = (data / 100) % 100;
+        int ano = data % 10;
 
-        String data, dia, mes, ano;
-        int num;
+        String dataFormada = String.format("%02d %02d %02d", dia, mes, ano);
+        JOptionPane.showMessageDialog(null, dataFormada);
 
-        System.out.print("Data de nascimento(ddmmaa):");
-        num = entrada.nextInt();
-
-        data = String.valueOf(num);
-        dia = data.substring(0, 1);
-        mes = data.substring(1, 3);
-        ano = data.substring(3, 5);
-
-        System.out.println(dia + "\n" + mes + "\n" + ano);
 
     }
 }

@@ -1,21 +1,18 @@
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Pratica01_18 {
 
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        String dia, mes, ano;
 
-        String data, dia, mes, ano;
-
-        System.out.print("Data de nascimento:");
-        data = entrada.nextLine();
-
+        String data = JOptionPane.showInputDialog("Digite a data (dd/mm/aa):");
         dia = data.substring(0, 2);
         mes = data.substring(3, 5);
         ano = data.substring(6, 8);
 
-        System.out.println(dia + "\n" + mes + "\n" + ano);
+        JOptionPane.showMessageDialog(null, dia + " " + mes + " " + ano);
+
     }
 }

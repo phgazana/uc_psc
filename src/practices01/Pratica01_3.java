@@ -3,13 +3,15 @@ import javax.swing.JOptionPane;
 public class Pratica01_3 {
     public static void main(String[] args) {
 
-        String dia, mes, ano;
+        int dia, mes, ano;
+        String dataFormada;
 
-        dia = JOptionPane.showInputDialog("Dia de nascimento: ");
-        mes = JOptionPane.showInputDialog("Mes de nascimento: ");
-        ano = JOptionPane.showInputDialog("Ano de nascimento: ");
+        dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia de nascimento:"));
+        mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mes de nascimento:"));
+        ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de nascimento:"));
 
-        JOptionPane.showMessageDialog(null, dia + "/" + mes + "/" + ano);
+        dataFormada = String.format("%02d/%02d/%04d", dia, mes, ano);
 
+        JOptionPane.showMessageDialog(null, dataFormada);
     }
 }
