@@ -9,7 +9,7 @@ public class TesteAluno {
         char sexo = JOptionPane.showInputDialog("Sexo M/F:").charAt(0);
         sexo = Character.toUpperCase(sexo);
 
-        Aluno aluno = new Aluno(nome, idade, peso, sexo);
+        Aluno aluno = new Aluno(nome, idade, peso, sexo);//Utilizado para criar e instanciar o objeto aluno da classe Aluno
 
         String msg = "Nome " + aluno.getNome() + "\nIdade " + aluno.getIdade() + " anos" + "\nPeso " + aluno.getPeso() + "kg";
         if (aluno.getFormando()) {
