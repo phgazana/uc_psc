@@ -6,43 +6,34 @@ public class CondicionadorDeAr {
 
     public CondicionadorDeAr() {
 
-        this.termostato = null;
         this.ligado = false;
     }
 
-    public Termostato getTermostato() {
-        return termostato;
-    }
-
-    public boolean getLigado() {
-        return ligado;
-    }
-
-    public void setLigar() {
+    public void Ligar() {
 
         ligado = true;
     }
 
-    public void setDesliga() {
+    public void Desligar() {
         ligado = false;
     }
 
-    public void setAumentarTemperatura() {
+    public void aumentarTemperatura(Termostato temperatura) {
 
-        if ( ) {
-
+        if (temperatura.getTemperatura() <= 28 && ligado == true) {
+            termostato.setTemperatura(termostato.getTemperatura() + 1);
         }
     }
 
-    public void setReduzirTemperatura() {
+    public void reduzirTemperatura(Termostato temperatura) {
 
-        if (temperatura <= 15) {
-            temperatura--;
+        if (temperatura.getTemperatura() <= 15 && ligado == true) {
+            termostato.setTemperatura(termostato.getTemperatura() - 1);
         }
     }
 
     public Termostato getImprimirTemperatura() {
-        return temperatura;
+        return termostato;
     }
 }
 
