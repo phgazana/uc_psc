@@ -5,7 +5,7 @@ public class Carros {
     public Carros(String modelo, String cor){
 
         this.modelo = modelo;
-        this.modelo = cor;
+        this.cor = cor;
     }
 
     public String getModelo(){

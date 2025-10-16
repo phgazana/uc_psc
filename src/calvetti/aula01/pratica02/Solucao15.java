@@ -1,7 +1,9 @@
 import javax.swing.JOptionPane;
 
-public class Pratica01_21 {
+public class Solucao15 {
     public static void main(String[] args) {
+
+        /*15) Ler dois números inteiros e imprimir dividendo, divisor, quociente e resto;*/
 
         int dividendo, divisor, quiocente, resto;
 
