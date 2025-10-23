@@ -2,10 +2,12 @@ public class Cliente {
 
     private String nome;
     private String cpf;
+    private ContaCorrente conta;
 
-    public Cliente(String nome, String cpf) {
+    public Cliente(String nome, String cpf, ContaCorrente conta) {
         this.nome = nome;
         this.cpf = cpf;
+        this.conta = conta;
     }
 
     public String getNome() {
@@ -24,8 +26,8 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getDados() {
-        return "Nome: " + nome + "\nCPF: " + cpf;
-    }
+    public ContaCorrente getConta(){ return conta;}
+
+    public void setConta(ContaCorrente conta){ this.conta = conta;}
 
 }

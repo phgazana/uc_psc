@@ -1,29 +1,18 @@
 public class ContaCorrente {
 
-    private Cliente cliente;
     private int numero;
     private int digito;
     private Agencia agencia;
     private double saldo;
 
 
-    public ContaCorrente(Cliente cliente, int numero, int digito, Agencia agencia, double saldo) {
+    public ContaCorrente(int numero, int digito, Agencia agencia, double saldo) {
 
-        this.cliente = cliente;
-        if (numero > 0 && numero <= 9999) {
-            this.numero = numero;
-        } else {
-            System.out.println("Digite até quatro digitos");
-        }
+        this.numero = numero;
         this.digito = digito;
         this.agencia = agencia;
         this.saldo = saldo;
     }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
     public int getNumero() {
         return numero;
     }
@@ -40,13 +29,10 @@ public class ContaCorrente {
         return saldo;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
     public void setNumero(int numero) {
-
-        this.numero = numero;
+        if(numero >= 0 && numero <= 9999) {
+            this.numero = numero;
+        }
     }
 
     public void setDigito(int digito) {
@@ -81,8 +67,8 @@ public class ContaCorrente {
         return saldo;
     }
 
-    public String getDados() {
-        return cliente.getDados() + "\nConta Corrente: " + numero + " Digito: " + digito + agencia.getDados() + "\nSaldo Inicial: " + saldo;
+    public String ImprimirSaldo() {
+        return "\nConta Corrente: " + numero + " Digito: " + digito + "\nAgencia: " + agencia.getNumero() + " Digito: " + agencia.getDigito() + "\nSaldo Inicial: " + saldo;
 
     }
 }
