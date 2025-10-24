@@ -12,6 +12,6 @@ public class Termostato {
     }
 
     public void setTemperatura(int temperatura) {
-        this.temperatura = temperatura;
+        if (temperatura >= 15 && temperatura <= 28) this.temperatura = temperatura;
     }
 }
