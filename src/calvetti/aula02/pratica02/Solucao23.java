@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 import java.util.Arrays;
 
-public class Solucao5 {
+public class Solucao23 {
     public static void main(String[] args) {
 
         /*5) Ler três números e armazená-los em três variáveis com os seguintes nomes, de
