@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Pratica03_17 {
+public class Solucao17 {
     public static void main(String[] args) {
 
         double conversao, cm = 2.54;

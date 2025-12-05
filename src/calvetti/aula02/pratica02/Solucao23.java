@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class Solucao23 {
     public static void main(String[] args) {
 
-        /*5) Ler três números e armazená-los em três variáveis com os seguintes nomes, de
+        /*23) Ler três números e armazená-los em três variáveis com os seguintes nomes, de
 acordo com seus valores relativos: maior, intermediário e menor (suponha números
 diferentes).*/
 

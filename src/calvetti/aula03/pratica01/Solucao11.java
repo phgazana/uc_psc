@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Pratica03_11 {
+public class Solucao11 {
     public static void main(String[] args) {
 
         String consumidor;

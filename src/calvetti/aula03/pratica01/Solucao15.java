@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Pratica03_15 {
+public class Solucao15 {
     public static void main(String[] args) {
 
         int maior;

@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Pratica03_22 {
+public class Solucao22 {
     public static void main(String[] args) {
 
         int limite;

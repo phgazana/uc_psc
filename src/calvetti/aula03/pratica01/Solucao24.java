@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Pratica03_24 {
+public class Solucao24 {
     public static void main(String[] args) {
 
         double valor, total = 0;

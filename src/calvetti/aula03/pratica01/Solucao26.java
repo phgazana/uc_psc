@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Pratica03_26 {
+public class Solucao26 {
     public static void main(String[] args) {
 
         String operacao;
