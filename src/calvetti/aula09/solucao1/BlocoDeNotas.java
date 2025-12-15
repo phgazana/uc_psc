@@ -18,6 +18,9 @@ public class BlocoDeNotas {
 
         notas.remove(remover.toUpperCase());
     }
+    public void alterar(int indice, String novaNota){
+        notas.set(indice, novaNota.toUpperCase());
+    }
 
     public void list() {
         JOptionPane.showMessageDialog(null, notas);
