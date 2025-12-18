@@ -3,6 +3,12 @@ import javax.swing.JOptionPane;
 public class Solucao25 {
     public static void main(String[] args) {
 
+        /*25) Escrever um algoritmo de urna eletrônica, para uma eleição com 4 candidatos à
+representante de sala. O aluno vota, digitando o número do candidato (1,2, 3 ou 4). O
+número de alunos eleitores é desconhecido. Quando for digitado o valor -1, o
+algoritmo encerra a eleição, escrevendo o percentual de votos de cada candidato e o
+total de alunos eleitores que participaram.*/
+
         int votos;
         double totalVotos;
         double v1 = 0, v2 = 0, v3 = 0, v4 = 0;
